@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlaceListActivity"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/ResListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:choiceMode="singleChoice" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_margin="5dp"
+                android:background="@drawable/edge2"
+                android:id="@+id/see_on_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="지도보기"
+                android:textSize="20sp"
+                android:fontFamily="@font/whitecat"/>
+            <Button
+                android:layout_margin="5dp"
+                android:background="@drawable/edge2"
+                android:id="@+id/search_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="정보보기"
+                android:textSize="20sp"
+                android:fontFamily="@font/whitecat"/>
+            <Button
+                android:layout_margin="5dp"
+                android:background="@drawable/edge2"
+                android:id="@+id/manage_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="관리하기"
+                android:textSize="20sp"
+                android:fontFamily="@font/whitecat"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

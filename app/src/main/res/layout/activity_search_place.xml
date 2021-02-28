@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchPlaceActivity"
+    android:background="#FFFFFF">
+    <LinearLayout
+        android:paddingTop="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="15dp"
+        android:gravity="center|bottom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginBottom="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="날짜: "
+                android:fontFamily="@font/whitecat"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/search_place_date"
+                android:fontFamily="@font/whitecat"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="20"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="장소의 이름"
+                android:textSize="30sp"
+                android:fontFamily="@font/whitecat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/place_name"
+                android:textSize="20sp"
+                android:fontFamily="@font/whitecat"
+                android:layout_width="wrap_content"
+                android:layout_height="23sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="30"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="장소의 내용"
+                android:textSize="30sp"
+                android:fontFamily="@font/whitecat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/place_content"
+                android:textSize="20sp"
+                android:fontFamily="@font/whitecat"
+                android:layout_width="wrap_content"
+                android:layout_height="23sp"/>
+        </LinearLayout>
+        <Button
+            android:background="@drawable/edge2"
+            android:id="@+id/backButton"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:text="뒤  로  가  기"
+            android:fontFamily="@font/whitecat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
